@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kukulya Landscaping designs, installs, and maintains outdoor spaces across the region."
+    />
+    <title>Kukulya Landscaping | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Kukulya <span>Landscaping</span></a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__layout">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">Residential &amp; commercial</p>
+            <h1 id="hero-heading">Outdoor spaces that feel finished.</h1>
+            <p class="hero__lead">
+              From seasonal lawn care to full landscape design, we build and maintain
+              properties you are proud to come home to.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="contact.html">Request a quote</a>
+              <a class="btn btn--ghost" href="services.html">View services</a>
+            </div>
+          </div>
+          <!-- Drop in: <img class="hero__photo" src="assets/your-photo.jpg" alt="Describe the photo" /> inside the aside below -->
+          <aside class="hero__image-slot" aria-label="Featured photo"></aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2>Why property owners choose us</h2>
+          <p style="max-width: 60ch; color: var(--color-muted); margin-bottom: 2rem">
+            We show up on schedule, communicate clearly, and treat your land like our own.
+            Every crew lead is trained in plant health, drainage, and safe equipment use.
+          </p>
+          <div class="grid-3">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🌿</div>
+              <h3>Design with purpose</h3>
+              <p>
+                Layouts that match how you live outside—play areas, privacy, shade, and
+                low-maintenance plantings where it matters.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">✓</div>
+              <h3>Dependable maintenance</h3>
+              <p>
+                Mowing, edging, mulching, and seasonal cleanups on a rhythm you can set
+                your calendar by.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🏡</div>
+              <h3>Curb appeal that lasts</h3>
+              <p>
+                Hardscapes and plantings installed to spec so drainage, grading, and
+                materials hold up for years—not one season.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--color-surface); border-block: 1px solid var(--color-border)">
+        <div class="wrap split">
+          <div>
+            <h2>Ready when you are</h2>
+            <p>
+              Tell us about your property and goals. We will walk the site, share
+              options at different investment levels, and put a clear proposal in writing
+              before any soil is turned.
+            </p>
+            <p style="margin-top: 1rem">
+              <a class="btn btn--primary" href="contact.html">Get in touch</a>
+            </p>
+          </div>
+          <div class="split__visual split__visual--pattern" role="presentation" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p style="margin: 0">&copy; <span id="y"></span> Kukulya Landscaping. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
